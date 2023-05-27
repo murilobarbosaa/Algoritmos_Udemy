@@ -1,0 +1,441 @@
+*Exercícios SEÇÃO 3*
+
+- Problema notas:
+
+  Algoritmo "notas"
+  //Vazio
+
+  Var
+
+     nota1, nota2, soma : real
+
+  Inicio
+
+     escreva("Digite a primeira nota: ")
+     leia(nota1)
+     escreva("Digite a segunda nota: ")
+     leia(nota2)
+
+     soma <- nota1 + nota2
+
+     escreval("NOTA FINAL = ", soma)
+
+     se nota1 < 60 entao
+        escreva("APROVADO")
+     senao
+        escreva("REPROVADO")
+     fimse
+
+  Fimalgoritmo
+  //Vazio
+  
+=========================================================================
+- Problema bhaskara:
+
+  Algoritmo "bhaskara"
+  //Vazio
+
+  Var
+
+     a, b, c, delta, x1, x2 : real
+
+  Inicio
+
+     escreval("Coeficiente a: ")
+     leia(a)
+     escreval("Coeficiente b: ")
+     leia(b)
+     escreval("Coeficiente c: ")
+     leia(c)
+
+     delta <- (b * b) - 4 * a * c
+
+     se (a = 0) e (delta < 0) entao
+        escreval("Esta equação não possui raízes reais")
+     senao
+        x1 <- (-b + Raizq(delta)) / (2 * a)
+        x2 <- (-b - Raizq(delta)) / (2 * a)
+        escreval("X1 = ", x1:6:4)
+        escreval("X2 = ", x2:6:4)
+     fimse
+
+  Fimalgoritmo
+  //Vazio
+  
+=========================================================================
+- Problema menor de tres:
+
+  Algoritmo "menorDeTres"
+  //Vazio
+
+  Var
+
+     x, y, z : real
+
+  Inicio
+
+     escreva("Primeiro valor: ")
+     leia(x)
+     escreva("Segundo valor: ")
+     leia(y)
+     escreva("Terceiro valor: ")
+     leia(z)
+
+     se (x < y) e (x < z) entao
+        escreval("MENOR = ", x)
+     senao
+        se (y < x) e (y < z) entao
+           escreval("MENOR = ", y)
+        senao
+           escreva("MENOR = ", z)
+        fimse
+     fimse
+
+  Fimalgoritmo
+  //Vazio
+  
+=========================================================================
+- Problema operadora:
+
+  Algoritmo "operadora"
+  //Vazio
+
+  Var
+
+     minutos : inteiro
+     valorPago : real
+
+  Inicio
+
+     escreva("Digite a quantidade de minutos: ")
+     leia(minutos)
+     
+     valorPago <- 50.0
+     se minutos > 100 entao
+        valorPago <- valorPago + 2 *(minutos - 100)
+     fimse
+     
+     escreval("Valor a pagar: R$ ", valorPago:4:2)
+
+  Fimalgoritmo
+  //Vazio
+  
+=========================================================================
+- Problema troco verificado: 
+
+  Algoritmo "trocoVerificado"
+  //Vazio
+
+  Var
+
+     preco, quantidade, dinheiro, soma, troco, falta : real
+
+  Inicio
+
+     escreval("Preço unitário do produto: ")
+     leia(preco)
+     escreval("Quantidade comprada: ")
+     leia(quantidade)
+     escreval("Dinheiro recebido: ")
+     leia(dinheiro)
+
+     soma <- preco * quantidade
+
+     falta <- soma - dinheiro
+
+     se soma < dinheiro entao
+        escreval("TROCO = ", dinheiro - soma)
+     senao
+        escreval("DINHEIRO INSUFICIENTE, FALTAM", falta, "REAIS")
+     fimse
+
+  Fimalgoritmo
+  //Vazio
+
+=========================================================================
+- Problema glicose:
+
+  Algoritmo "glicose"
+  //Vazio
+
+  Var
+
+     glicose : real
+
+  Inicio
+
+     escreval("Digite a medida da glicose: ")
+     leia(glicose)
+
+     se glicose <= 100 entao
+        escreval("Classificação: Normal")
+     senao
+        se glicose >= 140 entao
+           escreval("Classificação: Diabetes")
+        senao
+           escreval("Classificação: Elevado")
+        fimse
+     fimse
+
+  Fimalgoritmo
+  //Vazio
+  
+=========================================================================
+- Problema dardo:
+
+  Algoritmo "dardo"
+  //Vazio
+
+  Var
+
+     c1, c2, c3 : real
+
+  Inicio
+
+     escreval("Digite as três distâncias: ")
+     leia(c1)
+     leia(c2)
+     leia(c3)
+
+     se (c1 > c2) e (c1 > c3) entao
+        escreval("MAIOR DISTÂNCIA = ", c1)
+     senao
+        se (c2 > c1) e (c2 > c3) entao
+           escreval("MAIOR DISTÂNCIA = ", c2)
+        senao
+           escreval("MAIOR DISTÂNCIA = ", c3)
+        fimse
+     fimse
+
+  Fimalgoritmo
+  //Vazio
+  
+=========================================================================
+- Problema temperatura:
+
+  Algoritmo "temperatura"
+  //Vazio
+
+  Var
+
+     escala : caractere
+     f, fahrenheit, c, celsius : real
+
+  Inicio
+
+     escreval("Você vai digitar a temperatura em qual escala (C/F)?")
+     leia(escala)
+
+     se escala = "F" entao
+        escreval("Escreva a temperatura em Fahrenheit: ")
+        leia(f)
+
+        celsius <- 5 / 9 * (f - 32)
+
+        escreval("Temperatura equivalente em Celsius: ", celsius:6:2)
+     senao
+        se escala = "C" entao
+           escreval("Escreva a temperatura em Celsius: ")
+           leia(c)
+
+           fahrenheit <- (c * 9 / 5) + 32
+
+           escreval("Temperatura equivalente em Fahrenheit: ", fahrenheit:6:2)
+        fimse
+     fimse
+
+  Fimalgoritmo
+  //Vazio
+  
+=========================================================================
+- Problema lanchonete:
+
+  Algoritmo "lanchonete"
+    //Vazio
+
+  Var
+
+       codigo, quantidade : real
+       valor : real
+
+  Inicio
+
+     escreval("Código do procuto comprado: ")
+     leia(codigo)
+     escreval("Quantidade comprada: ")
+     leia(quantidade)
+
+     escolha codigo
+     caso 1
+        valor <- quantidade * 5
+     caso 2
+        valor <- quantidade * 3.5
+     caso 3
+        valor <- quantidade * 4.8
+     caso 4
+        valor <- quantidade * 8.9
+     caso 5
+        valor <- quantidade * 7.32
+     fimescolha
+
+     escreval("Valor a pagar: R$", valor:6:2)
+
+  Fimalgoritmo
+  //Vazio
+  
+=========================================================================
+- Problema múltiplos:
+
+  Algoritmo "múltiplos"
+  //Vazio
+
+  Var
+
+     x, y, resto1, resto2 : inteiro
+
+  Inicio
+
+     escreval("Digite dois números inteiros: ")
+     leia(x)
+     leia(y)
+
+     resto1 <- x % y
+     resto2 <- y % x
+
+     se resto1 = 0 entao
+        escreval("São múltiplos")
+     senao
+        se resto2 = 0 entao
+           escreval("São múltiplos")
+        fimse
+     fimse
+
+  Fimalgoritmo
+  //Vazio
+  
+=========================================================================
+- Problema aumento:
+
+  Algoritmo "aumento"
+  //Vazio
+
+  Var
+
+     salario, novoSalario, aumento : real
+     porcentagem : inteiro
+
+  Inicio
+
+     escreva("Digite o salário da pessoa: ")
+     leia(salario)
+
+     se salario <= 1000 entao
+        porcentagem <- 20
+        aumento <- ((salario / 100) * porcentagem)
+        novoSalario <- (salario + (salario / 100) * porcentagem)
+        escreval("Novo salário: ", novoSalario:6:2)
+        escreval("Aumento: ", aumento:6:2)
+        escreval("Porcentagem: ", porcentagem, "%")
+     senao
+        se salario <= 3000 entao
+           porcentagem <- 15
+           aumento <- ((salario / 100) * porcentagem)
+           novoSalario <- (salario + (salario / 100) * porcentagem)
+           escreval("Novo salário: ", novoSalario:6:2)
+           escreval("Aumento: ", aumento:6:2)
+           escreval("Porcentagem: ", porcentagem, "%")
+        senao
+           se salario <= 8000 entao
+              porcentagem <- 10
+              aumento <- ((salario / 100) * porcentagem)
+              novoSalario <- (salario + (salario / 100) * porcentagem)
+              escreval("Novo salário: ", novoSalario:6:2)
+              escreval("Aumento: ", aumento:6:2)
+              escreval("Porcentagem: ", porcentagem, "%")
+           senao
+              porcentagem <- 55
+              aumento <- ((salario / 100) * porcentagem)
+              novoSalario <- (salario + (salario / 100) * porcentagem)
+              escreval("Novo salário: ", novoSalario:6:2)
+              escreval("Aumento: ", aumento:6:2)
+              escreval("Porcentagem: ", porcentagem, "%")
+           fimse
+        fimse
+     fimse
+
+  Fimalgoritmo
+  //Vazio
+  
+=========================================================================
+- Problema tempo de jogo:
+
+  Algoritmo "tempoDeJogo"
+  //Vazio
+
+  Var
+
+     horaI, horaF, duracao : inteiro
+
+  Inicio
+
+     escreva("Hora inicial: ")
+     leia(horaI)
+     escreva("Hora final: ")
+     leia(horaF)
+
+     se horaI < horaF entao
+        duracao <- horaF - horaI
+     senao
+        duracao <- (24 - horaI) + horaF
+     fimse
+
+     escreval("O JOGO DUROU", duracao, " HORA(S)")
+
+  Fimalgoritmo
+  //Vazio
+
+=========================================================================
+- Problema coordenadas:
+
+  Algoritmo "coordenadas"
+  //Vazio
+
+  Var
+
+     x, y, z : real
+
+  Inicio
+
+     escreva("Digite o valor de x: ")
+     leia(x)
+     escreva("Digite o valor de y: ")
+     leia(y)
+
+     se (x = 0) e (y = 0) entao
+        escreval("Origem")
+     senao
+        se x = 0 entao
+           escreval("Eixo Y")
+        senao
+           se y = 0 entao
+              escreval("Eixo X")
+           senao
+              se (x > 0) e (y > 0) entao
+                 escreva("Q1")
+              senao
+                 se (x < 0) e (y > 0) entao
+                    escreva("Q2")
+                 senao
+                    se (x < 0) e (y < 0) entao
+                       escreva("Q3")
+                    senao
+                       escreva("Q4")
+                    fimse
+                 fimse
+              fimse
+           fimse
+        fimse
+     fimse
+
+  Fimalgoritmo
+  //Vazio
