@@ -1,0 +1,270 @@
+*Exercícios SEÇÃO 3*
+
+- Problema terrero:
+
+  Algoritmo "terreno"
+  //Vazio
+
+  Var
+
+     largura, comprimento, valor, area, preco : real
+
+  Inicio
+
+     escreval("Digite a largura do terreno: ")
+     leia(largura)
+     escreval("Digite o comprimento do terreno: ")
+     leia(comprimento)
+     escreval("Digite o valor do metro quadrado: ")
+     leia(valor)
+
+     area <- largura * comprimento
+     preco <- area * valor
+
+     escreval("Area do terreno = ", area)
+     escreval("Preco do terreno = ", preco)
+
+
+  Fimalgoritmo
+  //Vazio
+  
+=========================================================================
+- Problema retângulo:
+
+  Algoritmo "retângulo"
+  //Vazio
+
+  Var
+
+     base, altura, area, perimetro, diagonal : real
+
+  Inicio
+
+     escreval("Base do retângulo: ")
+     leia(base)
+     escreval("Altura do retângulo: ")
+     leia(altura)
+
+     area <- base * altura
+     perimetro <- (base * 2) + (altura * 2)
+     diagonal <- RaizQ((base*base) + (altura * altura))
+
+     escreval("AREA = ", area:7:4)
+     escreval("PERIMETRO = ", perimetro:7:4)
+     escreval("DIAGONAL = ", diagonal:7:4)
+
+  Fimalgoritmo
+  //Vazio
+  
+=========================================================================
+- Problema idades: 
+
+  Algoritmo "idades"
+  //Vazio
+
+  Var
+
+     nome1, nome2 : caractere
+     idade1, idade2 : real
+     media : real
+
+  Inicio
+
+     escreval("Dados da primeira pessoa: ")
+     escreva("Nome: ")
+     leia(nome1)
+     escreva("Idade: ")
+     leia(idade1)
+     escreval("Dados da segunda pessoa: ")
+     escreva("Nome: ")
+     leia(nome2)
+     escreva("Idade: ")
+     leia(idade2)
+
+     media <- (idade1 + idade2)/2
+
+     escreval("A idade média de ", nome1, " e ", nome2, " é de ", media)
+
+  Fimalgoritmo
+  //Vazio
+  
+=========================================================================
+- Problema soma:
+
+  Algoritmo "soma"
+  //Vazio
+
+  Var
+
+    x, y, soma : real
+
+  Inicio
+
+    escreval("Digite o valor de X: ")
+    leia(x)
+    escreval("Digite o valor de Y: ")
+    leia(y)
+
+    soma <- x + y
+
+    escreval("SOMA = ", soma)
+
+  Fimalgoritmo
+  //Vazio
+  
+=========================================================================
+- Problema troco:
+
+  Algoritmo "troco"
+  //Vazio
+
+  Var
+
+    preco, quantidade, dinheiro, troco : real
+
+  Inicio
+
+     escreva("Preço unitário do produto: ")
+     leia(preco)
+     escreva("Quantidade comprada: ")
+     leia(quantidade)
+     escreva("Dinheiro recebido: ")
+     leia(dinheiro)
+
+     troco <- dinheiro - (preco * quantidade)
+
+     escreva("TROCO = ", troco:6:2)
+
+  Fimalgoritmo
+  //Vazio
+  
+=========================================================================
+- Problema círculo:
+
+  Algoritmo "círculo"
+  //Vazio
+
+  Var
+
+     raio, area : real
+
+  Inicio
+
+     escreva("Escreva o valor do raio do círculo: ")
+     leia(raio)
+
+     area <- 3.14159 * (raio * raio)
+
+     escreval("AREA = ", area:7:3)
+
+  Fimalgoritmo
+  //Vazio
+  
+=========================================================================
+- Problema pagamento:
+
+  Algoritmo "pagamento"
+  //Vazio
+
+  Var
+
+     nome : caractere
+     valor, horas, pagamento : real
+
+  Inicio
+
+     escreva("Nome: ")
+     leia(nome)
+     escreva("Valor por hora: ")
+     leia(valor)
+     escreva("Horas trabalhadas: ")
+     leia(horas)
+
+     pagamento <- valor * horas
+
+     escreva("O pagamento para ", nome, " deve ser", pagamento)
+
+  Fimalgoritmo
+  //Vazio
+  
+=========================================================================
+- Problema consumo:
+
+  Algoritmo "consumo"
+  //Vazio
+
+  Var
+
+     distancia, combustivel, consumo : real
+
+  Inicio
+
+    escreva("Distância percorrida: ")
+    leia(distancia)
+    escreva("Combutível gasto: ")
+    leia(combustivel)
+
+    consumo <- distancia / combustivel
+
+    escreva("Consumo médio: ", consumo:6:3)
+
+  Fimalgoritmo
+  //Vazio
+
+=========================================================================
+- Problema medidas:
+
+  Algoritmo "medidas"
+  //Vazio
+
+  Var
+
+     a, b, c, areac, areat, areaz : real
+
+  Inicio
+
+     escreva("Digite a medida A: ")
+     leia(a)
+     escreva("Digite a medida B: ")
+     leia(b)
+     escreva("Digite a medida C: ")
+     leia(c)
+
+     areac <- a * a
+
+     areat <- (a * b) / 2
+
+     areaz <- ((a + b) * c) / 2
+
+     escreval("AREA DO QUADRADO = ", areac:6:4)
+     escreval("AREA DO TRIÂNGULO = ", areat:6:4)
+     escreval("AREA DO TRAPÉZIO = ", areaz:6:4)
+
+  Fimalgoritmo
+  //Vazio
+
+=========================================================================
+- Problema duração:
+
+  Algoritmo "duração"
+  //Vazio
+
+  Var
+
+     duracao, horas, minutos, segundos, resto : inteiro
+
+  Inicio
+
+     escreva("Digite a duracao em segundos: ")
+     leia(duracao)
+
+     horas <- duracao \ 3600
+     resto <- duracao % 3600
+
+     minutos <- resto \ 60
+     segundos <- resto % 60
+
+     escreval(horas, ":", minutos, ":", segundos)
+
+  Fimalgoritmo
+  //Vazio
