@@ -232,7 +232,7 @@
 
         celsius <- 5 / 9 * (f - 32)
 
-        escreval("Temperatura equivalente em Celsius: ", celsius:6:2)
+        escreval("Temperatura equivalente em Celsius: ", celsius:4:2)
      senao
         se escala = "C" entao
            escreval("Escreva a temperatura em Celsius: ")
@@ -240,7 +240,7 @@
 
            fahrenheit <- (c * 9 / 5) + 32
 
-           escreval("Temperatura equivalente em Fahrenheit: ", fahrenheit:6:2)
+           escreval("Temperatura equivalente em Fahrenheit: ", fahrenheit:4:2)
         fimse
      fimse
 
