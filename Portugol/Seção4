@@ -203,7 +203,7 @@
         se (c2 > c1) e (c2 > c3) entao
            escreval("MAIOR DISTÂNCIA = ", c2:4:2)
         senao
-           escreval("MAIOR DISTÂNCIA = ", c3)
+           escreval("MAIOR DISTÂNCIA = ", c3:4:2)
         fimse
      fimse
 
