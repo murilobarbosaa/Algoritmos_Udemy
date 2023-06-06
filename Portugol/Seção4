@@ -198,7 +198,7 @@
      leia(c3)
 
      se (c1 > c2) e (c1 > c3) entao
-        escreval("MAIOR DISTÂNCIA = ", c1)
+        escreval("MAIOR DISTÂNCIA = ", c1:4:2)
      senao
         se (c2 > c1) e (c2 > c3) entao
            escreval("MAIOR DISTÂNCIA = ", c2)
