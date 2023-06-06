@@ -21,8 +21,8 @@
      area <- largura * comprimento
      preco <- area * valor
 
-     escreval("Area do terreno = ", area)
-     escreval("Preco do terreno = ", preco)
+     escreval("Area do terreno = ", area:4:2)
+     escreval("Preco do terreno = ", preco:4:2)
 
 
   Fimalgoritmo
@@ -83,7 +83,7 @@
 
      media <- (idade1 + idade2)/2
 
-     escreval("A idade média de ", nome1, " e ", nome2, " é de ", media)
+     escreval("A idade média de ", nome1, " e ", nome2, " é de ", media:4:2)
 
   Fimalgoritmo
   //Vazio
@@ -107,7 +107,7 @@
 
     soma <- x + y
 
-    escreval("SOMA = ", soma)
+    escreval("SOMA = ", soma:4:2)
 
   Fimalgoritmo
   //Vazio
@@ -133,7 +133,7 @@
 
      troco <- dinheiro - (preco * quantidade)
 
-     escreva("TROCO = ", troco:6:2)
+     escreva("TROCO = ", troco:4:2)
 
   Fimalgoritmo
   //Vazio
@@ -155,7 +155,7 @@
 
      area <- 3.14159 * (raio * raio)
 
-     escreval("AREA = ", area:7:3)
+     escreval("AREA = ", area:4:2)
 
   Fimalgoritmo
   //Vazio
@@ -206,7 +206,7 @@
 
     consumo <- distancia / combustivel
 
-    escreva("Consumo médio: ", consumo:6:3)
+    escreva("Consumo médio: ", consumo:4:2)
 
   Fimalgoritmo
   //Vazio
@@ -236,9 +236,9 @@
 
      areaz <- ((a + b) * c) / 2
 
-     escreval("AREA DO QUADRADO = ", areac:6:4)
-     escreval("AREA DO TRIÂNGULO = ", areat:6:4)
-     escreval("AREA DO TRAPÉZIO = ", areaz:6:4)
+     escreval("AREA DO QUADRADO = ", areac:4:2)
+     escreval("AREA DO TRIÂNGULO = ", areat:4:2)
+     escreval("AREA DO TRAPÉZIO = ", areaz:4:2)
 
   Fimalgoritmo
   //Vazio
@@ -264,7 +264,7 @@
      minutos <- resto \ 60
      segundos <- resto % 60
 
-     escreval(horas, ":", minutos, ":", segundos)
+     escreval(horas, ":", minutos, ":", segundos:4:2)
 
   Fimalgoritmo
   //Vazio
