@@ -333,7 +333,7 @@
         porcentagem <- 20
         aumento <- ((salario / 100) * porcentagem)
         novoSalario <- (salario + (salario / 100) * porcentagem)
-        escreval("Novo salário: ", novoSalario:6:2)
+        escreval("Novo salário: ", novoSalario:4:2)
         escreval("Aumento: ", aumento:6:2)
         escreval("Porcentagem: ", porcentagem, "%")
      senao
@@ -341,7 +341,7 @@
            porcentagem <- 15
            aumento <- ((salario / 100) * porcentagem)
            novoSalario <- (salario + (salario / 100) * porcentagem)
-           escreval("Novo salário: ", novoSalario:6:2)
+           escreval("Novo salário: ", novoSalario:4:2)
            escreval("Aumento: ", aumento:6:2)
            escreval("Porcentagem: ", porcentagem, "%")
         senao
@@ -349,14 +349,14 @@
               porcentagem <- 10
               aumento <- ((salario / 100) * porcentagem)
               novoSalario <- (salario + (salario / 100) * porcentagem)
-              escreval("Novo salário: ", novoSalario:6:2)
+              escreval("Novo salário: ", novoSalario:4:2)
               escreval("Aumento: ", aumento:6:2)
               escreval("Porcentagem: ", porcentagem, "%")
            senao
               porcentagem <- 55
               aumento <- ((salario / 100) * porcentagem)
               novoSalario <- (salario + (salario / 100) * porcentagem)
-              escreval("Novo salário: ", novoSalario:6:2)
+              escreval("Novo salário: ", novoSalario:4:2)
               escreval("Aumento: ", aumento:6:2)
               escreval("Porcentagem: ", porcentagem, "%")
            fimse
