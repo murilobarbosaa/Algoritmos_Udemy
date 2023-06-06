@@ -278,7 +278,7 @@
         valor <- quantidade * 7.32
      fimescolha
 
-     escreval("Valor a pagar: R$", valor:6:2)
+     escreval("Valor a pagar: R$", valor:4:2)
 
   Fimalgoritmo
   //Vazio
