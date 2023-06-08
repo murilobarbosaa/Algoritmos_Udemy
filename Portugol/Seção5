@@ -1,29 +1,34 @@
-Algoritmo "while"
-//Vazio
-
-Var
-
-   x, soma : inteiro
-   
-Inicio
-
-   escreva("Digite o primeiro número: ")
-   leia(x)
-
-   soma <- 0
-   
-   enquanto x <> 0 faca
-      soma <- soma + x
-      escreva("Digite outro número: ")
-      leia(x)
-   fimenquanto
-   
-   escreva("SOMA =", soma)
-   
-Fimalgoritmo
-//Vazio
-
-=========================================================================
 *Exercícios SEÇÃO 5*
 
-- Problema teste de mesa manual:
+- Problema crescente:
+
+   Algoritmo "while"
+   //Vazio
+
+   Var
+
+      x, y : inteiro
+
+   Inicio
+
+      escreval("Digite dois números: ")
+         leia(x)
+         leia(y)
+
+      enquanto x <> y faca
+         se x > y entao
+            escreval("Decrescente")
+         senao
+            escreval("Crescente")
+         fimse
+
+         escreval("Digite outros dois números: ")
+         leia(x)
+         leia(y)
+
+      fimenquanto
+
+   Fimalgoritmo
+   //Vazio
+   
+=========================================================================  
