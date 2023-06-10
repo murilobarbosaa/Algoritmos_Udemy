@@ -98,7 +98,40 @@
 ========================================================================= 
 - Problema quadrante:
 
+   Algoritmo "quadrante"
+   //Vazio
 
+   Var
+
+      x, y : inteiro
+
+   Inicio
+
+      x <- 1
+      y <- 1
+
+      enquanto (x <> 0) e (y <> 0) faca
+         escreva("Digite a coordenada x: ")
+         leia(x)
+         escreva("Digite a coordenada y: ")
+         leia(y)
+
+         se (x > 0) e (y > 0) entao
+            escreva("O ponto pertence ao quadrante Q1")
+         senao se (x < 0) e (y > 0) entao
+            escreva("O ponto pertence ao quadrante Q2")
+         senao se (x < 0) e (y < 0) entao
+            escreva("O ponto pertence ao quadrante Q3")
+         senao se (x > 0) e (y < 0) entao
+            escreva("O ponto pertence ao quadrante Q4")
+        fimse
+
+        escreval("")
+
+      fimenquanto
+
+   Fimalgoritmo
+   //Vazio
 
 ========================================================================= 
 - Problema validação de nota:
