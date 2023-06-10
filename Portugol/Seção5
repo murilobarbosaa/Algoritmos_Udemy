@@ -103,30 +103,33 @@
 
    Var
 
-      x, y : inteiro
+      X, Y : real
 
    Inicio
 
-      x <- 1
-      y <- 1
+      escreval("Digite os valores das coordenadas X e Y:")
+      leia(X)
+      leia(Y)
 
-      enquanto (x <> 0) e (y <> 0) faca
-         escreva("Digite a coordenada x: ")
-         leia(x)
-         escreva("Digite a coordenada y: ")
-         leia(y)
+      enquanto (X <> 0) e (Y <> 0) faca
 
-         se (x > 0) e (y > 0) entao
-            escreva("O ponto pertence ao quadrante Q1")
-         senao se (x < 0) e (y > 0) entao
-            escreva("O ponto pertence ao quadrante Q2")
-         senao se (x < 0) e (y < 0) entao
-            escreva("O ponto pertence ao quadrante Q3")
-         senao se (x > 0) e (y < 0) entao
-            escreva("O ponto pertence ao quadrante Q4")
-        fimse
+         se (X > 0) e (Y > 0) entao
+            escreval("QUADRANTE Q1")
+         senao
+            se (X < 0) e (Y > 0) entao
+               escreval("QUADRANTE Q2")
+            senao
+               se (X < 0) e (Y < 0) entao
+                  escreval("QUADRANTE Q3")
+               senao
+                  escreval("QUADRANTE Q4")
+               fimse
+            fimse
+         fimse
 
-        escreval("")
+         escreval("Digite os valores das coordenadas X e Y:")
+         leia(X)
+         leia(Y)
 
       fimenquanto
 
