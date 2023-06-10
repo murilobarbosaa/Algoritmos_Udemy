@@ -71,6 +71,28 @@
 ========================================================================= 
 - Problema senha_fixa:
 
+   Algoritmo "senha_fixa"
+   //Vazio
 
+   Var
+
+     tentativa, senha : inteiro
+
+   Inicio
+
+      senha <- 2002
+
+      escreva("Digite a senha: ")
+      leia(tentativa)
+
+      enquanto tentativa <> senha faca
+         escreva("Senha inválida! Tente novamente: ")
+         leia(tentativa)
+      fimenquanto
+
+      escreval("Acesso permitido!")
+
+   Fimalgoritmo
+   //Vazio
 
 ========================================================================= 
