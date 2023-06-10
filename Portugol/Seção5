@@ -34,36 +34,36 @@
 =========================================================================  
 - Problema media_idade:
 
-Algoritmo "media_idades"
-//Vazio
+   Algoritmo "media_idades"
+   //Vazio
 
-Var
+   Var
 
-   idades, soma, cont : inteiro
-   media : real
+      idades, soma, cont : inteiro
+      media : real
 
-Inicio
+   Inicio
 
-   soma <- 0
-   cont <- 0
-   
-   escreval("Digite as idades: ")
-   leia(idades)
-   
-   enquanto idades >= 0 faca
-      soma <- soma + idades
-      cont <- cont + 1
+      soma <- 0
+      cont <- 0
+
+      escreval("Digite as idades: ")
       leia(idades)
-   fimenquanto
 
-   se cont = 0 entao
-      escreval("IMPOSSÍVEL CALCULAR")
-   senao
-      media <- soma / cont
-      escreval("MEDIA = ", media:4:2)
-   fimse
+      enquanto idades >= 0 faca
+         soma <- soma + idades
+         cont <- cont + 1
+         leia(idades)
+      fimenquanto
 
-Fimalgoritmo
-//Vazio
+      se cont = 0 entao
+         escreval("IMPOSSÍVEL CALCULAR")
+      senao
+         media <- soma / cont
+         escreval("MEDIA = ", media:4:2)
+      fimse
+
+   Fimalgoritmo
+   //Vazio
 
 ========================================================================= 
