@@ -6,7 +6,7 @@ if x < y and x < z:
     menor = x
 elif y < x and y < z:
     menor = y
-else:
+elif z < x and z < y:
     menor = z
 
 print(f"MENOR = {menor}")
