@@ -1,5 +1,4 @@
-print("Digite dois numeros: ")
-x = int(input())
+x = int(input("Digite dois números:\n"))
 y = int(input())
 
 troca = 0
@@ -14,4 +13,4 @@ for i in range(x + 1, y):
     if i % 2 != 0:
         soma += i
 
-print(f"SOMA DOS IMPARES: {soma}")
+print(f"Soma dos ímpares = {soma}")
